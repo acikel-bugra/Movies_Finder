@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Movies to Watch</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="" />
+  <link href="https://res.cloudinary.com/finnhvman/raw/upload/matter/matter-0.2.2.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="main.css" />
+  <link rel="stylesheet" href="box.css">
+  <script src="main.js"></script>
+</head>
+<body>
+  <div id="main-grid">
+    <div id="inpholder">
+      <label class="matter-textfield-outlined">
+        <input placeholder=" " type="text" id="search" autocomplete="off">
+        <span class="noselect">Search for movie/show by title or imdb id</span>
+      </label>
+      </div>
+    <div id="results">
+      <div id="nothing">
+        <img src="dude_chillin.svg" alt="" draggable="false">
+        <div>Movies to Watch</div>
+      </div>
+      
+    </div>
+    <div id="details-screen" hidden>
+      <div id="details-header">
+        <div id="details-backdrop-fade"></div>
+        <div id="details-backdrop-fade-rest"></div>
+        <div id="details-header-content">
+          <div id="details-x-button"><span class="material-icons">close</span></div>
+          <div id="details-poster-wrapper">
+            <img id="details-poster" draggable="false">
+          </div>
+          <h5 id="details-title" class="matter-h4 details-right">Steins;Gate<span id="details-year">(2011)</span> </h5>
+          <div id="details-genres" class="details-right">
+            <span class="details-genre">Comedy</span>
+            <span class="details-genre">Action</span>
+            <span class="details-genre">Adventure</span>
+            <span class="details-genre" title="Science Fiction, Fantasy">&bull;&bull;&bull;</span>
+          </div>
+          <div id="details-type-length" class="matter-subtitle1 details-right">-</div>
+          <p id="details-overview" class="matter-subtitle1 details-right">A bank teller called Guy realizes he is a background character in an open world video game called Free City that will soon go offline.</p>
+          <!-- TODO x button for details -->
+          <div id="details-rating-wrapper" class="details-right">
+            <span id="score" title="This rating is not very objective, because it's audience rating from tmdb. Better to check imdb for actual rating.">8.4</span>
+            <span class="details-spacer">&bull;</span>
+            <span id="details-pg">PG-13</span>
+            <button class="matter-button-outlined" id="pluggedin"><img id="pluggedinicon" title="plugged-in reviews" src="pluggedinicon.svg" alt=""></button>
+            <span class="details-spacer">&bull;</span>
+            <button id="trailerbtn" class="matter-button-outlined ctmdb">See Trailer</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="footer">
+        <input type="text" id="copyinp">
+    </div>
+  </div>
+</body>
+</html>
